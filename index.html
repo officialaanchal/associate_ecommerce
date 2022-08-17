@@ -1,0 +1,602 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/js" href="filejs.js">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous">
+     <!--end-->
+
+<!--Icons link-->
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <!--end-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid colr"><!--img in nav bar code-->
+          <a class="navbar-brand" href="#"><img class="logo" alt="Brand" src="img/aa.png" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#trend">Trending Collection</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.amazon.in/s?k=art+and+craft">Art & Crafts</a></li>
+                    <li><a class="dropdown-item" href="https://www.amazon.in/b/ref=QANav11CTA_en_IN_3?pf_rd_r=Z14M4WSG7FQ2V5DHVDXW&pf_rd_p=3986796e-8014-47f2-bf00-9ad3d5c3da32&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=6648217031&node=1355016031">Cosmetic's</a></li>
+                    <li><a class="dropdown-item" href="https://www.amazon.in/s?k=home+kitchen&ref=nb_sb_noss">Home & Kitchen</a></li>
+                    <li><a class="dropdown-item" href="https://www.amazon.in/s?i=fashion&bbn=16491484031&rh=n%3A6648217031%2Cn%3A16491484031%2Cn%3A7459780031%2Cn%3A1953602031%2Cn%3A11400137031%2Cp_n_pct-off-with-tax%3A2665401031&dc&pf_rd_i=6648217031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=6e8efafc-bb59-4c9a-b318-accb74ecdf7f&pf_rd_r=Z14M4WSG7FQ2V5DHVDXW&pf_rd_s=merchandised-search-16&qid=1628174813&rnid=1953602031&ref=sr_nr_n_1">Women's Fashion</a></li>      
+                    <li><a class="dropdown-item" href="https://www.amazon.in/s?i=apparel&bbn=1968120031&rh=n%3A1571271031%2Cn%3A1571272031%2Cn%3A1968024031%2Cn%3A1968120031%2Cp_36%3A-39900&s=popularity-rank&dc&hidden-keywords=-sunglass+-belt+-accessories&pf_rd_i=1968024031&pf_rd_i=1968024031&pf_rd_i=1968024031&pf_rd_i=1968024031&pf_rd_i=22423967031&pf_rd_i=6648217031&pf_rd_i=6648217031&pf_rd_i=7459781031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=00e079c0-823a-44e4-9b98-9c03ee2323ca&pf_rd_p=19ca8014-92d4-4ad3-b942-cdbe2fe700fc&pf_rd_p=2a6463b7-5f6e-4760-a2ef-50ba07f05487&pf_rd_p=628c3b4f-20b3-483d-b34b-7cd13ab5ea56&pf_rd_p=d1296c40-0c5d-4bcf-94ba-c79cee0d37c9&pf_rd_p=df8cd163-2506-4333-a8ff-40f6e886cf65&pf_rd_p=e4d9333c-4d0a-4870-8fd9-060e6785470a&pf_rd_p=ebc29f59-fa94-48cd-a131-2d3d4b75d512&pf_rd_r=14ED242DDMWS502873KP&pf_rd_r=8E0RGEVDCCENC41CZ8J2&pf_rd_r=AHQ01GYPQKZZKDQQM82V&pf_rd_r=D0J3ZV3ZRJXV5N1GR308&pf_rd_r=DA24QN331BRBBVBSS527&pf_rd_r=G6EF3SN7QM17A3RY5ZC4&pf_rd_r=RZ0GD4MP8KWWG9WD1AQC&pf_rd_r=Z14M4WSG7FQ2V5DHVDXW&pf_rd_s=merchandised-search-13&pf_rd_s=merchandised-search-17&pf_rd_s=merchandised-search-17&pf_rd_s=merchandised-search-17&pf_rd_s=merchandised-search-5&pf_rd_s=merchandised-search-6&pf_rd_s=merchandised-search-6&pf_rd_s=mobile-hybrid-6&pf_rd_t=30901&qid=1612780992&rnid=4595083031&ref=sr_nr_p_36_1">Men's Fashion</a></li>
+                    <li><a class="dropdown-item" href="https://www.amazon.in/b/ref=QANav11CTA_en_IN_1?pf_rd_r=Z14M4WSG7FQ2V5DHVDXW&pf_rd_p=74087910-69a4-4ed6-9fdf-f99684746bef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&node=15952293031">Girl's Fashion </a></li>
+                    <li><a class="dropdown-item" href="https://www.amazon.in/b/ref=QANav11CTA_en_IN_1?pf_rd_r=Z14M4WSG7FQ2V5DHVDXW&pf_rd_p=74087910-69a4-4ed6-9fdf-f99684746bef&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-7&pf_rd_t=&pf_rd_i=6648217031&node=15952293031">Boy's Fashion</a></li>
+                    <li><a class="dropdown-item" href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics_c5b70a82461a484189e700166599ce9f">Electronic's</a></li>
+                    <li><a class="dropdown-item" href="https://www.amazon.in/s?k=luggage+bags+for+travel&crid=1NMUVVHOEVWBM&sprefix=lugg%2Caps%2C404&ref=nb_sb_ss_ts-doa-p_1_4">Luggage</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-captitlize" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+                   
+            <div class="mx-2">
+            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#LoginModle">Login</button>
+            <button class="btn btn-outline-success" data-bs-toggle="modal"  data-bs-target="#sinup">SignUp</button>
+           </div>
+          </div>
+    </div>    
+      </nav>
+    
+      <!--end-->
+      <!--login-->
+     
+      <!-- Modal -->
+      <div class="modal fade" id="LoginModle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Log-in Here</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"> Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!--end login-->
+      <!-- SignUp -->
+             
+      <div class="modal fade" id="sinup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sin-Up Here</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Creat an Account</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sinup end -->
+      
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/shopping.gif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/shop.gif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/b.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      
+          
+
+        
+        <!--2nd section-->
+
+        <section class="main_heading my-5" bg-light pt-5>
+          <div class="text-center">
+            <h1 class="display-4" > Latest Offer</h1>
+            <hr class="w-25 mx-auto "/>
+          </div>
+          <div class="container Services">
+            <div class="row  my-5">
+              <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/bgif.webp" class="img-fluid rounded-start" id="imgh" alt="Services images">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                           additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/crausal.jpeg" class="img-fluid rounded-start" id="imgh" alt="Services images">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                           additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/gg.gif" class="img-fluid rounded-start" id="imgh" alt="Services images">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                           additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-12 text-center my-5" >
+                <a href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion_ad6f81eb5d474066bc9e5788a3c19a28" style="text-decoration:none;">
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Latest Offer">Check More</button></a>
+
+              </div>
+              
+
+<!--Services 3 img-->
+                   
+            </div>
+          </div>
+          </section>
+          
+                   <!--3 Section-->    
+          <section class="main_heading my-5"  pt-5>
+            <div class="text-center">
+              <h1 class="display-4" id="trend">Trending Collection</h1>
+              <hr class="w-25 mx-auto "/>
+            </div>
+            <div class="container">
+              <div class="row gy-2 my-5 ">
+               
+
+                <!--img og gallry-->
+                  
+                <div class="container mt-2">
+                  <!--   <div class="card card-block mb-2">
+                      <h4 class="card-title">Card 1</h4>
+                      <p class="card-text">Welcom to bootstrap card styles</p>
+                      <a href="#" class="btn btn-primary">Submit</a>
+                    </div>   -->
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.in/s?i=apparel&bbn=1968253031&rh=n%3A1571271031%2Cn%3A1953602031%2Cn%3A1968253031%2Cn%3A1968256031%2Cp_36%3A-39900&s=apparels&dc&pf_rd_i=1953602031&pf_rd_i=21645250031&pf_rd_i=6648217031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=477c878e-a396-41c8-a726-8e24d32558db&pf_rd_p=628c3b4f-20b3-483d-b34b-7cd13ab5ea56&pf_rd_p=c7c81029-674b-4585-a4f5-aeb6c6f40c79&pf_rd_r=DZYDXKWH93HGMMZDK79F&pf_rd_r=NRGYVB7685HT7BZFZAMG&pf_rd_r=TX5S4593NR83MJZXB8X3&pf_rd_s=merchandised-search-11&pf_rd_s=merchandised-search-13&pf_rd_s=mobile-hybrid-12&pf_rd_t=30901&qid=1592373673&rnid=4595083031&ref=sr_nr_p_36_1" style="text-decoration:none;">
+                      <img src="img/saree.jpg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center ">Saree  Collection</h5></a>
+                    </div>
+                      </div>
+
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href=""style="text-decoration:none;">
+                      <img src="img/gg.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Women's Fashion</h5></a>
+                    </div>
+                      </div>
+                        <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.in/s?k=women+accessories+jewellery&crid=1H3PEERCQHXKG&sprefix=women+accessories%2Caps%2C374&ref=nb_sb_ss_ts-doa-p_5_17" style="text-decoration:none;">
+                         <img src="img/jwellary.jpg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Women's Accessories </h5></a>
+                    </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href=" https://www.amazon.in/s?bbn=1983633031&rh=n%3A1571283031%2Cn%3A%211571284031%2Cn%3A1983396031%2Cn%3A1983578031%2Cn%3A1983633031%2Cp_n_feature_seven_browse-bin%3A2022338031&s=shoes&dc&fst=as%3Aoff&pf_rd_i=1983578031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=0977b58d-9096-4673-b05e-fd92746a0b26&pf_rd_r=W10NSBR9E4H1GMKX6Q23&pf_rd_s=merchandised-search-8&qid=1600436783&rnid=2022048031&ref=lp_1983633031_nr_p_n_feature_seven_br_0 "style="text-decoration:none;">
+                      <img src="img/girlfootwear.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center"> Women's Footwear </h5></a>
+                    </div>
+                      </div>    
+                    </div>
+                    
+                  </div>
+                  
+                       
+                <!-- offer end-->
+                <br>
+               <!-- 2nd row of offer -->
+
+
+                <div class="container mt-2">
+                  <!--   <div class="card card-block mb-2">
+                      <h4 class="card-title">Card 1</h4>
+                      <p class="card-text">Welcom to bootstrap card styles</p>
+                      <a href="#" class="btn btn-primary">Submit</a>
+                    </div>   -->
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="  "style="text-decoration:none;">
+                      <img src="img/kid.jpg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center ">Kid's Fashion</h5></a>
+                    </div>
+                      </div>
+
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.in/s?k=kids+toys&ref=nb_sb_noss"style="text-decoration:none;">
+                      <img src="img/kidtoy.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Kid's Toys</h5></a>
+                    </div>
+                      </div>
+                        <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.in/b/ref=QANav11CTA_en_IN_1?pf_rd_r=MGXR4NRNDBBHZ1JYQPQY&pf_rd_p=a1fac4de-68b1-4916-ba6d-011e9fd278f7&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-5&pf_rd_t=&pf_rd_i=6648217031&node=1968024031"style="text-decoration:none;">
+                      <img src="img/men.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Men Fashion</h5></a>
+                    </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.in/b/ref=QANav11CTA_en_IN_2?pf_rd_r=MGXR4NRNDBBHZ1JYQPQY&pf_rd_p=3986796e-8014-47f2-bf00-9ad3d5c3da32&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=6648217031&ie=UTF8&node=1983578031&nocache=1617970640932"style="text-decoration:none;">
+                      <img src="img/shoes.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Footwear </h5></a>
+                    </div>
+                      </div>    
+                    </div>
+                    
+                  </div>
+                  
+                       
+                <!--  2 row offer end-->
+                <br>
+
+      
+                 <!--4 Section-->    
+          <section class="main_heading my-5"  pt-5>
+            <div class="text-center">
+              <h1 class="display-4"> Latest Offer</h1>
+              <hr class="w-25 mx-auto "/>
+            </div>
+            <div class="container">
+              <div class="row gy-2 my-5 ">
+               
+
+                <div class="container mt-2">
+                  <!--   <div class="card card-block mb-2">
+                      <h4 class="card-title">Card 1</h4>
+                      <p class="card-text">Welcom to bootstrap card styles</p>
+                      <a href="#" class="btn btn-primary">Submit</a>
+                    </div>   -->
+                    
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dbaby-products-intl-ship&field-keywords=" style="text-decoration:none;">
+                      <img src="img/baby.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Baby Care</h5></a>
+                    </div>
+                      </div>
+
+                    <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.in/s?k=kitchen+eating+product&ref=nb_sb_noss"style="text-decoration:none;">
+                      <img src="img/kitchen.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Kitchen Needs</h5></a>
+                    </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                        <a href="https://www.amazon.in/b/ref=QANav11CTA_en_IN_3?pf_rd_r=MGXR4NRNDBBHZ1JYQPQY&pf_rd_p=3986796e-8014-47f2-bf00-9ad3d5c3da32&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-6&pf_rd_t=&pf_rd_i=6648217031&node=1355016031"style="text-decoration:none;">
+                      <img src="img/cosmatic.jpg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-captitlize text-center">Cosmetics Products</h5></a>
+                    </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 item">
+                        <div class="card item-card card-block">
+                          <a href="https://www.amazon.in/s?k=electronic+gadgets+latest&crid=HJ20N288ZRQA&sprefix=electroni%2Caps%2C390&ref=nb_sb_ss_ts-doa-p_1_9"style="text-decoration:none;">
+                      <img src="img/electronic.jpeg" alt="Photo of sunset">
+                          <h5 class="card-title  mt-3 mb-3 text-center">Electronic Gadgets</h5></a>
+                    </div>
+                      </div>    
+                    </div>
+                    
+                  </div>
+                  
+                
+                  <!-- 
+                2nd offer
+                end 2nd offer -->
+              </div>
+            </div>  
+          </section>
+          
+          <!--our services-->
+
+          <section class="main_heading my-5">
+            <div class="text-center">
+              <h1 class="display-4" id="about">About Us</h1>
+              <hr class="w-25 mx-auto "/>
+            </div>
+           <!-- <div class="container-fluid bg-primary">   
+             <h2></h2>
+            </div>-->
+            <div class="container">
+              <div class="row my-5">
+                  <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-around algin-items-center flex-column">
+                    <figure>
+                      <img src="img/about.png" alt="about images" class="img-fluid about_img">
+                    </figure>
+                  </div>
+  
+                  <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+                    <h1>My Journey</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, odit eos tempore praesentium consequatur quasi repellat nihil sequi debitis unde minus nisi perferendis tenetur voluptas optio doloribus quo distinctio id?</p>
+                    <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Who Am I">Check More</button>
+  
+                  </div>
+              </div>
+            </div>
+          </section>
+
+          <!--4 Section-->    
+          <section class="main_heading my-5 py-2  offer_style">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xxl-12 col-12 py-5 text-center">
+                  <h1>Check Out Our Videos</h1>
+                  <h4 class="textcolr">Your Goal Are Our Goal</h4>
+                  <p>"Never give up on something that you can't go a day without thinking about our services"</p>
+                  <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Prduct review on Videos" >Check More</button>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <!--contact section-->
+          <!-- the day -->
+          
+          <section class="main_heading my-5">
+            <div class="text-left">
+              <h1 class="display-4" style="text-align: center !important;" id="contact">Contact Us</h1>
+              <hr class="w-25 mx-auto "/>
+              <div class="container">
+                <div class="row">
+                  <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label" style="text-align: left;">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </section>
+
+
+          <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+
+          <!-- footer-->
+          <footer>
+            <div class="content">
+              <div class="top">
+                <div class="logo-details">
+                  <span class="logo_name">Sitesoch</span>
+                </div>
+                <div class="media-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="link-boxes">
+                <ul class="box">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Get Started</a></li>
+                
+                </ul>
+                <ul class="box">
+                  <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help_79404a52982a4d9d973cf256c713999e"> Services</a></li>
+                  <li><a href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion_ad6f81eb5d474066bc9e5788a3c19a28">Latest Offer</a></li>
+                  <li><a href="#">Logo Design</a></li>
+                  <li><a href="https://www.amazon.in/s?k=product+revi&i=fashion&ref=nb_sb_noss_2">Product Review's</a></li>
+                
+                </ul>
+            <ul class="box">
+                  <li class="link_name">Other services</li>
+                  <li><a href="#">SEO</a></li>
+                  <li><a href="#">Content Marketing</a>
+                  <li><a href="#">Social Media</a></li>
+                
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Contact</li>
+                  <li><a href="#">+91 8879887262</a></li>
+                  <li><a href="#">+91 8879887262</a></li>
+                  <li><a href="#">contact@anchalmishrainfotec.com</a></li>
+                </ul>  
+              </div>
+            </div>
+                <div class="bottom-details">
+                <div class="bottom_text">
+                  <span class="copyright_text">Copyright © 2021 <a href="#">@anchalmishrainfotech.</a></span>
+                  <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    
+                  </span>
+                </div>
+              </div>
+                <!-- Scroll to top button -->
+                <button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="img/up-arrow.png" style="height: 30px;width: 30px;"></button>
+
+                <script type="text/javascript">
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+          </footer>
+          
+          
+</body>
+</html>
